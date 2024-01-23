@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Microstrip Antenna Dimension Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="headsec">
+        <h1><u>MICROSTRIP ANTENNA PATCH DIMENSION CALCULATOR</u></h1>
+    </div>
+    <div><img src="image.jpg"></div>
+    <h3><u>Dielectric Constant Value :</u></h3>
+    <div class="diel-col">
+        <span>
+            <select id="diel-const">
+                <option value="diel-const">Dielectric Constant(ε)</option>
+            </select>
+            <input type="number" id="diel-const1" placeholder="Enter Dielectric Constant Value">
+        </span>
+        
+    </div>
+    <div class="dielh-col">
+        <h3><u>Dielectric Substrate Height (in mm) :</u></h3>
+        <input type="number" id="diel-hgt" placeholder="Enter Substrate Height">
+    </div>
+    <div class="res_freq">
+        <h3><u>Resonant Frequency (Operating Frequency) :</u></h3>
+        <input type="number" id="resfreq" placeholder="Enter Resonant Frequency">
+        <select id="freq-unit">
+            <option value="GHz">GHz</option>
+            <option value="MHz">MHz</option>
+            <option value="KHz">KHz</option>
+            <option value="Hz">Hz</option>
+        </select>
+    </div>
+    <div>
+        <button id="calculateButton">CALCULATE</button>
+    </div>
+
+    <div class="result_col">
+        <h3><u>Result :</u></h3>
+        <p id="resultWidth"></p>
+        <p id="resultLength"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
